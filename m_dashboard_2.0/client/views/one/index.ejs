@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>One Elephant</title>
+  </head>
+  <body>
+    <section>
+      <% for(const ele of elephant){ %>
+      <h1>Welcome this is <%= ele.name %>'s profile</h1>
+      <nav>
+        <a href="/new">Make a new elephant</a>
+        <a href="/">Home</a>
+      </nav>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Species</th>
+            <th>Native Country</th>
+            <th>Age</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td><%= ele.name %></td>
+            <td><%= ele.species %></td>
+            <td><%= ele.native_country %></td>
+            <td><%= ele.age %></td>
+            <td>
+              <a href="/elephant/edit/<%=elephant._id %>"><button>Edit</button></a>
+              <form class="" action="/elephant/destroy/<%=elephant._id %>" method="post">
+                <button>Delete</button>
+              </form>
+          </tr>
+          <hr>
+        <% } %>
+        </tbody>
+      </table>
+    </section>
+
+  </body>
+</html>
