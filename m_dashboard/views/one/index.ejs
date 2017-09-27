@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>One Elephant</title>
+  </head>
+  <body>
+    <section>
+      <h1>Welcome this is <%= elephant.name %>'s profile</h1>
+      <nav>
+        <a href="/elephant/new">Make a new elephant</a>
+      </nav>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Species</th>
+            <th>Native Country</th>
+            <th>Age</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td><%= elephant.name %></td>
+            <td><%= elephant.species %></td>
+            <td><%= elephant.native_country %></td>
+            <td><%= elephant.age %></td>
+            <td>
+              <a href="/elephant/edit/<%=elephant._id %>"><button>Edit</button></a>
+              <a href="/elephant/destroy/<%=elephant._id %>"><button>Delete</button></a>
+            </td>
+          </tr>
+          <hr>
+
+        </tbody>
+      </table>
+    </section>
+
+  </body>
+</html>

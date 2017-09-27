@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>New Elephant</title>
+  </head>
+  <body>
+
+    <fieldset>
+      <legend><h1>Make a new Elephant</h1></legend>
+      <form action="/elephant" method="post">
+        <div>
+          <label for="">Name</label>
+          <input type="text" name="name">
+        </div>
+        <div>
+          <label for="">Species</label>
+          <select value="species" name="species">
+            <option disabled="" selected="" value="">Select one of the Options Below</option>
+            <option name="African bush elephant (Loxodonta africana)" id="">African bush elephant (Loxodonta africana)</option>
+            <option name="African forest elephant (L. cyclotis)" id="">African forest elephant (L. cyclotis)</option>
+            <option name="Asian elephant (Elephas maximus)" id="">Asian elephant (Elephas maximus)</option>
+          </select>
+        </div>
+        <div>
+          <label for="">Native Region</label>
+          <select value="native_country" name="native_country">
+            <option disabled="" selected="" value="">Select one of the Options Below</option>
+            <option name="East Africa" id="">East Africa</option>
+            <option name="West Africa" id="">West Africa</option>
+            <option name="South Africa" id="">South Africa</option>
+            <option name="South Africa" id="">Asia</option>
+            <option name="South East Asia" id="">South East Asia</option>
+          </select>
+        </div>
+        <div>
+          <label for="">Age</label>
+          <input type="text" name="age" value="">
+        </div>
+        <button>Create!</button>
+      </form>
+    </fieldset>
+
+
+  </body>
+</html>
